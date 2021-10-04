@@ -41,11 +41,6 @@ exports.handler = async (event) => {
         goToLoginPage: true,
       });
     }
-  } else if (
-    event.path === uploadProfilePath ||
-    event.path === getProfilePath
-  ) {
-    delete event.headers.Authorization;
   }
 
   switch (true) {
